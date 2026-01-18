@@ -1,0 +1,22 @@
+# Build output
+/build
+*.apk
+*.aab
+
+# IDE files and caches
+/.idea/
+*.iml
+
+# Gradle files
+.gradle/
+
+# Local configuration
+/local.properties
+
+# OS-specific
+.DS_Store
+
+# Native build files
+/captures
+.externalNativeBuild/
+.cxx/
