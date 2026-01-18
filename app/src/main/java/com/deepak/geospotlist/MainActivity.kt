@@ -63,14 +63,17 @@ fun MainScreen() {
         ) { innerPadding ->
             NavHost(
                 navController = navController,
-                startDestination = "places",
+                startDestination = "start",
                 modifier = Modifier.padding(innerPadding)
             ) {
-                composable("places") {
+                // An empty start destination, so no tab is selected initially
+                composable("start") { }
+                
+                composable(Routes.PLACES) {
                     PlacesScreenDisplay()
                 }
 
-                composable("maps") {
+                composable(Routes.MAPS) {
                     MapsScreenDisplay()
                 }
             }

@@ -1,22 +1,33 @@
-# Build output
-/build
+# Build output & Gradle cache
+/build/
+.gradle/
 *.apk
 *.aab
+output.json
+
+# Local configuration
+local.properties
 
 # IDE files and caches
 /.idea/
 *.iml
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
 
-# Gradle files
-.gradle/
+# Keystore files
+*.jks
+*.keystore
 
-# Local configuration
-/local.properties
+# Google Services
+google-services.json
 
-# OS-specific
-.DS_Store
-
-# Native build files
-/captures
+# Profiling and native build files
+/captures/
 .externalNativeBuild/
 .cxx/
+*.hprof
+
+# Log and OS files
+*.log
+.DS_Store
